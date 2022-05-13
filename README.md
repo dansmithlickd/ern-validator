@@ -8,7 +8,7 @@ To build and start webserver on port 6060
 
 ```
 chmod +x start.sh
-./start.sh
+./build.sh
 docker-compose up
 ```
 
