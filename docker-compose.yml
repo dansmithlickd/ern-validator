@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  app:
+    hostname: app
+    build:
+      context: .
+      dockerfile: ./docker/spring/Dockerfile    
+    ports:
+      - 6060:6060
+    command: ['mvn', 'spring-boot:run']
+    volumes:
+      - ".:/tmp:rw"

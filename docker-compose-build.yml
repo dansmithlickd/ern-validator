@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  maven:
+    hostname: maven
+    build:
+      context: .
+      dockerfile: ./docker/maven/Dockerfile    
+    ports:
+      - 6060:6060
+    volumes:
+      - ".:/tmp:rw"
+    
